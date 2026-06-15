@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeria fotográfica de Conexões — Uma exposição digital sobre a relação entre humano e tecnologia.">
+  <meta name="theme-color" content="#080809">
+  <title>Galeria — Conexões</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeria fotográfica de Conexões — Uma exposição digital sobre a relação entre humano e tecnologia.">
+  <meta name="theme-color" content="#080809">
+  <title>Galeria — Conexões</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo" aria-label="Conexões - Página inicial">CONEXÕES</a>
+      
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="galeria.html" class="nav-link active">Galeria</a></li>
+        <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+        <li><a href="autores.html" class="nav-link">Autores</a></li>
+      </ul>
+      
+      <div class="navbar-language" role="group" aria-label="Seletor de idioma">
+        <button class="lang-btn active" data-lang="pt" aria-label="Português">PT</button>
+        <span class="lang-separator">|</span>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
+      
+      <button class="navbar-toggle" aria-label="Menu mobile" aria-expanded="false" aria-controls="navbar-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="gallery-main">
+    <!-- Chapter 01 -->
+    <section class="gallery-chapter" id="chapter01" aria-labelledby="chapter01-title">
+      <div class="chapter-header">
+        <h2 id="chapter01-title" class="chapter-number" data-pt="CAPÍTULO 01" data-en="CHAPTER 01">CAPÍTULO 01</h2>
+        <h3 class="chapter-subtitle" data-pt="Mundo Conectado / Decadente" data-en="Connected World / Decadent">Mundo Conectado / Decadente</h3>
+      </div>
+      
+      <div class="gallery-grid" id="gallery-chapter01">
+        <!-- Imagens serão carregadas aqui por JavaScript -->
+      </div>
+    </section>
+
+    <!-- Chapter 02 -->
+    <section class="gallery-chapter" id="chapter02" aria-labelledby="chapter02-title">
+      <div class="chapter-header">
+        <h2 id="chapter02-title" class="chapter-number" data-pt="CAPÍTULO 02" data-en="CHAPTER 02">CAPÍTULO 02</h2>
+        <h3 class="chapter-subtitle" data-pt="Resistência / Conexão Real" data-en="Resistance / Real Connection">Resistência / Conexão Real</h3>
+      </div>
+      
+      <div class="gallery-grid" id="gallery-chapter02">
+        <!-- Imagens serão carregadas aqui por JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <dialog class="lightbox" id="lightbox" aria-label="Visualizador de fotos" role="dialog" aria-modal="true">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Fechar visualizador">&times;</button>
+      
+      <div class="lightbox-image-container">
+        <img id="lightbox-image" src="" alt="" class="lightbox-image">
+      </div>
+      
+      <button class="lightbox-prev" aria-label="Foto anterior">&#10094;</button>
+      <button class="lightbox-next" aria-label="Próxima foto">&#10095;</button>
+      
+      <div class="lightbox-counter">
+        <span id="lightbox-current">1</span> / <span id="lightbox-total">1</span>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <p data-pt="© 2024 Conexões. Marley Silva × Emidio Lucas. Todos os direitos reservados." data-en="© 2024 Conexões. Marley Silva × Emidio Lucas. All rights reserved.">© 2024 Conexões. Marley Silva × Emidio Lucas. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/language.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/lightbox.js"></script>
+</body>
+</html>
+</body>
+</html>

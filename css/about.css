@@ -1,0 +1,126 @@
+/* ============================================
+   ABOUT PAGE STYLESHEET
+   ============================================ */
+
+.about-main {
+  padding-top: 80px;
+  padding-bottom: var(--spacing-xxl);
+  background-color: var(--color-black-primary);
+  min-height: 100vh;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--spacing-xxl) var(--spacing-lg);
+}
+
+.about-title {
+  text-align: center;
+  margin-bottom: var(--spacing-xxl);
+  color: var(--color-green-matrix);
+  letter-spacing: 2px;
+}
+
+.about-section {
+  margin-bottom: var(--spacing-xxl);
+}
+
+.about-section h2 {
+  color: var(--color-green-matrix);
+  margin-bottom: var(--spacing-lg);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.about-section h3 {
+  color: var(--color-white-soft);
+  margin-bottom: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+.about-section p {
+  color: var(--color-light-gray);
+  line-height: 1.9;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.about-section p + h3 {
+  margin-top: var(--spacing-xl);
+}
+
+/* ============================================
+   RESPONSIVIDADE
+   ============================================ */
+
+@media (max-width: 1199px) {
+  .about-content {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+  
+  .about-section p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-main {
+    padding-top: 80px;
+    padding-bottom: var(--spacing-lg);
+  }
+  
+  .about-content {
+    padding: var(--spacing-lg) var(--spacing-sm);
+    max-width: 100%;
+  }
+  
+  .about-title {
+    font-size: 1.8rem;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .about-section {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .about-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .about-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+  }
+  
+  .about-section p {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+  
+  .about-title {
+    font-size: 1.5rem;
+  }
+  
+  .about-section h2 {
+    font-size: 1.1rem;
+  }
+  
+  .about-section h3 {
+    font-size: 1rem;
+  }
+  
+  .about-section p {
+    font-size: 0.85rem;
+  }
+}
