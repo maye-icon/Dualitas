@@ -30,6 +30,10 @@ const GalleryHandler = {
         { src: '17.webp', alt: 'Mundo Conectado / Decadente - Imagem 12' },
         { src: '18.webp', alt: 'Mundo Conectado / Decadente - Imagem 12' },
         { src: '19.webp', alt: 'Mundo Conectado / Decadente - Imagem 12' },
+        { src: '20.webp', alt: 'Mundo Conectado / Decadente - Imagem 12' },
+        { src: '21.webp', alt: 'Mundo Conectado / Decadente - Imagem 12' },
+        { src: '22.webp', alt: 'Mundo Conectado / Decadente - Imagem 12' },
+        { src: '23.webp', alt: 'Mundo Conectado / Decadente - Imagem 12' },
       ]
     },
     chapter02: {
