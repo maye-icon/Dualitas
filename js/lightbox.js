@@ -82,6 +82,10 @@ const LightboxHandler = {
 
     this.lightbox.showModal();
     document.body.style.overflow = 'hidden';
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${this.scrollPosition}px`;
+    document.body.style.left = '0';
+    document.body.style.width = '100%';
     document.body.classList.add('lightbox-open');
     
     this.updateImage();
@@ -95,6 +99,10 @@ const LightboxHandler = {
     
     this.lightbox.close();
     document.body.style.overflow = '';
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.left = '';
+    document.body.style.width = '';
     document.body.classList.remove('lightbox-open');
     this.isOpen = false;
 
