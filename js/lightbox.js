@@ -48,7 +48,7 @@ const LightboxHandler = {
     if (imageContainer) {
       imageContainer.addEventListener('touchstart', (e) => {
         this.touchStartX = e.touches[0].clientX;
-      });
+      }, { passive: true });
       
       imageContainer.addEventListener('touchend', (e) => {
         const touchEndX = e.changedTouches[0].clientX;
@@ -61,7 +61,7 @@ const LightboxHandler = {
             this.prev();
           }
         }
-      });
+      }, { passive: true });
     }
     
     // Fechar ao clicar fora da imagem

@@ -30,7 +30,7 @@ const NavbarHandler = {
     });
     
     // Detectar scroll
-    window.addEventListener('scroll', () => this.handleScroll());
+    window.addEventListener('scroll', () => this.handleScroll(), { passive: true });
     
     // Fechar menu ao redimensionar
     window.addEventListener('resize', () => {
@@ -93,66 +93,5 @@ document.addEventListener('DOMContentLoaded', () => {
   NavActiveHandler.init();
 });
 
-// ============================================
-// UTILITY FUNCTIONS
-// ============================================
 
-/**
- * Adicionar classe com delay
- */
-function addClassWithDelay(element, className, delay = 100) {
-  if (!element) return;
-  setTimeout(() => {
-    element.classList.add(className);
-  }, delay);
-}
-
-/**
- * Remover classe com delay
- */
-function removeClassWithDelay(element, className, delay = 100) {
-  if (!element) return;
-  setTimeout(() => {
-    element.classList.remove(className);
-  }, delay);
-}
-
-/**
- * Verificar se elemento está em viewport
- */
-function isInViewport(element) {
-  const rect = element.getBoundingClientRect();
-  return (
-    rect.top < window.innerHeight &&
-    rect.bottom > 0 &&
-    rect.left < window.innerWidth &&
-    rect.right > 0
-  );
-}
-
-/**
- * Lazy loading de imagens
- */
-function initLazyLoading() {
-  if ('IntersectionObserver' in window) {
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const img = entry.target;
-          if (img.dataset.src) {
-            img.src = img.dataset.src;
-            img.removeAttribute('data-src');
-          }
-          observer.unobserve(img);
-        }
-      });
-    });
-    
-    document.querySelectorAll('img[data-src]').forEach(img => {
-      imageObserver.observe(img);
-    });
-  }
-}
-
-// Inicializar lazy loading
-document.addEventListener('DOMContentLoaded', initLazyLoading);
+// No unused lazy-loading behavior remains for this project.

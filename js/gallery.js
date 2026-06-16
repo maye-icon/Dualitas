@@ -68,11 +68,14 @@ const GalleryHandler = {
     // Limpar container
     container.innerHTML = '';
     
-    // Carregar imagens
+    const fragment = document.createDocumentFragment();
+    
     chapter.images.forEach((image, index) => {
       const item = this.createGalleryItem(image, chapterKey, index);
-      container.appendChild(item);
+      fragment.appendChild(item);
     });
+    
+    container.appendChild(fragment);
   },
   
   createGalleryItem(image, chapterKey, index) {
@@ -85,6 +88,8 @@ const GalleryHandler = {
     img.src = `${this.chapters[chapterKey].folder}/${image.src}`;
     img.alt = image.alt;
     img.loading = 'lazy';
+    img.width = 600;
+    img.height = 600;
     
     item.appendChild(img);
     

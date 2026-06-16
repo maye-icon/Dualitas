@@ -265,9 +265,6 @@ body.lightbox-open {
   pointer-events: none;
 }
 
-body.lightbox-open {
-  overflow: hidden;
-}
 /* ============================================
    RESPONSIVIDADE
    ============================================ */
