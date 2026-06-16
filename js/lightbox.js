@@ -10,6 +10,8 @@ const LightboxHandler = {
   allImages: [],
   isOpen: false,
   touchStartX: 0,
+  scrollPosition: 0,
+  previousFocus: null,
   
   init() {
     this.lightbox = document.getElementById('lightbox');
@@ -75,6 +77,9 @@ const LightboxHandler = {
     this.currentIndex = imageIndex;
     this.isOpen = true;
     
+    this.scrollPosition = window.scrollY || window.pageYOffset;
+    this.previousFocus = document.activeElement;
+
     this.lightbox.showModal();
     document.body.style.overflow = 'hidden';
     document.body.classList.add('lightbox-open');
@@ -92,6 +97,11 @@ const LightboxHandler = {
     document.body.style.overflow = '';
     document.body.classList.remove('lightbox-open');
     this.isOpen = false;
+
+    window.scrollTo({ top: this.scrollPosition, behavior: 'auto' });
+    if (this.previousFocus instanceof HTMLElement) {
+      this.previousFocus.focus();
+    }
   },
   
   next() {
