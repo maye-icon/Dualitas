@@ -8,7 +8,8 @@ const GalleryHandler = {
   chapters: {
     chapter01: {
       title: 'Capítulo 01 - Mundo Conectado / Decadente',
-      folder: 'images/capitulo1',
+      folder: 'images/capitulo1/thumbs',
+      fullFolder: 'images/capitulo1/full',
       images: [
         { src: '0.webp', alt: 'Mundo Conectado / Decadente - Imagem 1' },
         { src: '1.webp', alt: 'Mundo Conectado / Decadente - Imagem 2' },
@@ -38,16 +39,16 @@ const GalleryHandler = {
     },
     chapter02: {
       title: 'Capítulo 02 - Resistência / Conexão Real',
-      folder: 'images/capitulo2',
+      folder: 'images/capitulo2/thumbs',
+      fullFolder: 'images/capitulo2/full',
       images: [
-        { src: '01.jpg', alt: 'Resistência / Conexão Real - Imagem 1' },
-        { src: '02.jpg', alt: 'Resistência / Conexão Real - Imagem 2' },
-        { src: '03.jpg', alt: 'Resistência / Conexão Real - Imagem 3' },
-        { src: '04.jpg', alt: 'Resistência / Conexão Real - Imagem 4' },
-        { src: '05.jpg', alt: 'Resistência / Conexão Real - Imagem 5' },
-        { src: '06.jpg', alt: 'Resistência / Conexão Real - Imagem 6' },
-        { src: '07.jpg', alt: 'Resistência / Conexão Real - Imagem 7' },
-        { src: '08.jpg', alt: 'Resistência / Conexão Real - Imagem 8' },
+        { src: '01.webp', alt: 'Resistência / Conexão Real - Imagem 1' },
+        { src: '02.webp', alt: 'Resistência / Conexão Real - Imagem 2' },
+        { src: '03.webp', alt: 'Resistência / Conexão Real - Imagem 3' },
+        { src: '04.webp', alt: 'Resistência / Conexão Real - Imagem 4' },
+        { src: '05.webp', alt: 'Resistência / Conexão Real - Imagem 5' },
+        { src: '06.webp', alt: 'Resistência / Conexão Real - Imagem 6' },
+
       ]
     }
   },

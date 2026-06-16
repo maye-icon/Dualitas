@@ -134,12 +134,13 @@ const LightboxHandler = {
     
     const imgElement = document.getElementById('lightbox-image');
     const chapter = GalleryHandler.chapters[this.currentChapter];
+    const fullFolder = chapter.fullFolder || chapter.folder;
     
     // Fade out
     imgElement.style.opacity = '0';
     
     setTimeout(() => {
-      imgElement.src = `${chapter.folder}/${image.src}`;
+      imgElement.src = `${fullFolder}/${image.src}`;
       imgElement.alt = image.alt;
       
       // Fade in
@@ -161,10 +162,11 @@ const LightboxHandler = {
     const nextIndex = (this.currentIndex + 1) % this.allImages[this.currentChapter].length;
     const nextImage = this.allImages[this.currentChapter][nextIndex];
     const chapter = GalleryHandler.chapters[this.currentChapter];
+    const fullFolder = chapter.fullFolder || chapter.folder;
     
     if (nextImage) {
       const img = new Image();
-      img.src = `${chapter.folder}/${nextImage.src}`;
+      img.src = `${fullFolder}/${nextImage.src}`;
     }
   }
 };
