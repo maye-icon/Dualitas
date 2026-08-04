@@ -48,6 +48,21 @@ const GalleryHandler = {
         { src: '04.webp', alt: 'Resistência / Conexão Real - Imagem 4' },
         { src: '05.webp', alt: 'Resistência / Conexão Real - Imagem 5' },
         { src: '06.webp', alt: 'Resistência / Conexão Real - Imagem 6' },
+        { src: '07.webp', alt: 'Resistência / Conexão Real - Imagem 7' },
+        { src: '08.webp', alt: 'Resistência / Conexão Real - Imagem 8' },
+        { src: '09.webp', alt: 'Resistência / Conexão Real - Imagem 9' },
+        { src: '10.webp', alt: 'Resistência / Conexão Real - Imagem 10' },
+        { src: '11.webp', alt: 'Resistência / Conexão Real - Imagem 11' },
+        { src: '12.webp', alt: 'Resistência / Conexão Real - Imagem 12' },
+        { src: '13.webp', alt: 'Resistência / Conexão Real - Imagem 13' },
+        { src: '14.webp', alt: 'Resistência / Conexão Real - Imagem 14' },
+        { src: '15.webp', alt: 'Resistência / Conexão Real - Imagem 15' },
+        { src: '17.webp', alt: 'Resistência / Conexão Real - Imagem 17' },
+        { src: '18.webp', alt: 'Resistência / Conexão Real - Imagem 18' },
+        { src: '19.webp', alt: 'Resistência / Conexão Real - Imagem 19' },
+        { src: '20.webp', alt: 'Resistência / Conexão Real - Imagem 20' },
+        { src: '21.webp', alt: 'Resistência / Conexão Real - Imagem 21' },
+        
 
       ]
     }
